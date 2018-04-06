@@ -10,9 +10,9 @@
 
     if($resultDelete)
     {
-      echo "Deletion successful <br>";
+      echo "<p class=\"successMessage\">Deletion successful </p>";
     } else {
-      die("Database deletion was unsuccessful");
+      die("<p class=\"error\">Database deletion was unsuccessful</p>");
     }
   }
 ?>

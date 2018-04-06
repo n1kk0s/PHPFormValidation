@@ -1,4 +1,11 @@
+/* Testing purposes only!
+div {
+	border: 5px solid black;
+}
+*/
+
 body {
+	background-color: #e0e0e0;
 	margin: 0 auto;
 	width: 50rem;
 	font-family: "Helvetica", "Trebuchet", "Arial", sans-serif;
@@ -16,10 +23,96 @@ h1, h2, strong {
 	color: #333;
 }
 
-
 /* Start of non-standard CSS */
 
-#headings td{
-	font-weight: bold;
-	font-size: 14pt;
+/* Error and success message styling */
+.error {
+	font-family: monospace;
+	color: darkred;
+	font-size: 1.2rem;
+}
+
+.successMessage {
+	font-family: monospace;
+	color: #4CAF50;
+	font-size: 1.2rem;
+}
+
+/* Div styling */
+.heading {
+	text-align: center;
+}
+
+.userSelectDiv {
+	display:inline-block;
+	vertical-align: top;
+ 	text-align: center;
+	width: 20rem;
+	margin-left: 3rem;
+}
+
+.detailsDiv {
+	display:inline-block;
+	margin-left: 5rem;
+	width:20rem;
+}
+
+/* Styling for items within divs */
+.detailsDiv h2 {
+	text-align: center;
+}
+
+/* Format all buttons */
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin: 10px auto;
+	margin-bottom: 0px;
+	box-sizing: border-box;
+}
+
+#selectUser {
+	width: 100%;
+}
+
+#addLink {
+	width:auto;
+	padding: 5px 10px;
+
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for text fields */
+.textField {
+	width: 100%;
+	padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+	box-sizing: border-box;
+}
+
+/* Styling for select menu */
+select {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+/* Style the p tag in the selectuser div */
+.instructions {
+	text-align: justify;
 }

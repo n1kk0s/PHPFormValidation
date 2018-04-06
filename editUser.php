@@ -25,14 +25,14 @@
 
     if(!isValid($editState, $editZip))
     {
-      echo "Form not submitted, see errors <br>";
+      echo "<p class=\"error\">Form not submitted, see errors </p>";
       if(!stateValid($editState))
       {
-        echo "The state must be 2 characters <br>";
+        echo "<p class=\"error\">The state must be 2 characters</p>";
       }
       if(!zipValid($editZip))
       {
-        echo "The zip code must contain 5 numbers and must be greater than 0 <br>";
+        echo "<p class=\"error\">The zip code must contain 5 numbers and must be greater than 0 </p>";
       }
     }
     else
@@ -47,11 +47,11 @@
       // Test if query was successful
       if($resultUpdate)
       {
-        echo "Update successful <br>";
+        echo "<p class=\"successMessage\">Update successful </p>";
       }
       else
       {
-        die("Database update was unsuccessful");
+        die("<p class=\"error\">Database update was unsuccessful</p>");
       }
 
     }

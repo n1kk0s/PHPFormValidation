@@ -20,14 +20,14 @@
     // Validate form fields for State and Zip (the empty fields are handled by HTML)
     if(!isValid($addState, $addZip))
     {
-      echo "Form not submitted, see errors <br>";
+      echo "<p class=\"error\">Form not submitted, see errors </p>";
       if(!stateValid($addState))
       {
-        echo "The state must be 2 characters <br>";
+        echo "<p class=\"error\">The state must be 2 characters </p>";
       }
       if(!zipValid($addZip))
       {
-        echo "The zip code must contain 5 numbers and must be greater than 0 <br>";
+        echo "<p class=\"error\">The zip code must contain 5 numbers and must be greater than 0 </p>";
       }
     }
     else
@@ -40,9 +40,9 @@
 
       // Check if add was successful
       if($resultAdd) {
-        echo "Add successful <br>";
+        echo "<p class=\"successMessage\">Add successful </p>";
       } else {
-        die("Database insert was unsuccessful");
+        die("<p class=\"error\">Database insert was unsuccessful</p>");
       }
 
     }

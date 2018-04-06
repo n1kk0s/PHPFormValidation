@@ -1,9 +1,9 @@
 <?php
 
 $hn = 'localhost';
-$db = 'unit_9';
+$db = 'webdesign';
 $un = 'root';
-$pw = '';
+$pw = 'password';
 
 $conn = new mysqli($hn, $un, $pw, $db);
 ?>
