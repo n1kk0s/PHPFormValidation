@@ -1,0 +1,25 @@
+body {
+	margin: 0 auto;
+	width: 50rem;
+	font-family: "Helvetica", "Trebuchet", "Arial", sans-serif;
+	color: #555;
+	line-height: 1.5;
+	padding:4rem 1rem;
+}
+
+h2 {
+	margin-top: 1rem;
+	padding-top: 1rem;
+}
+
+h1, h2, strong {
+	color: #333;
+}
+
+
+/* Start of non-standard CSS */
+
+#headings td{
+	font-weight: bold;
+	font-size: 14pt;
+}
